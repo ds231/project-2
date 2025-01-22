@@ -1,14 +1,17 @@
 {
-  "name": "crew-ai-sales-agent",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "process-leads": "tsx src/cli.ts"
+    "name": "crew-ai-sales-agent",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "lint": "eslint .",
+      "preview": "vite preview --host 0.0.0.0 --port $PORT",
+      "start": "vite preview --host 0.0.0.0 --port $PORT",
+      "process-leads": "tsx src/cli.ts"
+   
+  
   },
   "dependencies": {
     "react": "^18.3.1",
