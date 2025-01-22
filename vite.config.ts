@@ -8,8 +8,7 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
-    port: 3000,
-    // This ensures the server can accept connections from any IP
+    port: parseInt(process.env.PORT || '10000'),
     strictPort: true,
   }
 });
